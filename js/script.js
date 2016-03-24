@@ -42,6 +42,9 @@ $(document).ready(function() {
         autoPlay : true,
         navigation : false,
         navigationText : false,
+        responsive : true,
+        responsiveRefreshRate : 200,
+        responsiveBaseWidth: window,
         pagination : true
     });
 });
@@ -53,6 +56,9 @@ $(document).ready(function() {
         autoPlay : true,
         navigation : false,
         navigationText : true,
+        responsive : true,
+        responsiveRefreshRate : 200,
+        responsiveBaseWidth: window,
         pagination : false
     });
     // Custom Navigation Events

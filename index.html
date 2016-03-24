@@ -9,9 +9,10 @@
     <!-- OwlCarousel -->
     <link rel="stylesheet" href="css/owl.carousel.css"/>
     <link rel="stylesheet" href="css/owl.theme.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
      <!--Swipebox-->
     <link rel="stylesheet" href="css/swipebox.css"/>
     <!-- Fonts -->
@@ -43,22 +44,21 @@
                 <small>fermentum fringilla.</small>
             </p>
         </div>
-        <div class="header-top-nav">
-            <div class="col-md-4 about-nav4">
+        <div class="row header-top-nav">
+            <div class="col-md-6 about-nav4">
                 <a class="scroll" href="#services">
                     <span class="nav-icon4"></span>
                     <label>Services</label>
                 </a>
             </div>
-            <div class="col-md-4 about-nav5">
+            <div class="col-md-6 about-nav5">
                 <a class="scroll" href="#portfolio">
                     <span class="nav-icon5"></span>
                     <label>Portfolio</label>
                 </a>
             </div>
         </div>
-        <div class="clearfix"></div>
-        <div class="header-bottom-nav">
+        <div class="header-bottom-nav row">
             <div class="col-md-6 left-nav text-left">
                 <div class="about-nav">
                     <a class="scroll" href="#about">
@@ -87,9 +87,7 @@
                         <label>Contact</label>
                     </a>
                 </div>
-                <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
         </div>
         <div class="arrow-nav">
             <div class="arrow">
@@ -101,26 +99,49 @@
         <div class="clearfix"></div>
     </div>
 </header>
-<div id="header-nav" class="header-nav">
-    <div class="top-nav">
-        <nav class="fixed">
+<nav class="navbar navbar-default fixed main-nav">
+    <div class="container">
+        <div class="navbar-header">
             <div class="logo">
-                <a href="#"><img src="img/logo2.png" alt=""/></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><img src="img/logo2.png" alt="" class="img-responsive"/></a>
             </div>
-            <span class="menu"></span>
-            <ul>
-                <li class="active"><a class="scroll" href="#home">HOME</a></li>
-                <li><a class="scroll" href="#about">ABOUT</a></li>
-                <li><a class="scroll" href="#team">TEAM</a></li>
-                <li><a class="scroll" href="#services">SERVICES</a></li>
-                <li><a class="scroll" href="#portfolio">PORTFOLIO</a></li>
-                <li><a class="scroll" href="#blog">BLOG</a></li>
-                <li class="contact"><a class="scroll" href="#contact">CONTACT</a></li>
+        </div>
+
+        <span class="menu"></span>
+        <div class="collapse navbar-collapse top-nav" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="scroll" href="#home">HOME</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#team">TEAM</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#services">SERVICES</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a class="scroll" href="#blog">BLOG</a>
+                </li>
+                <li class="contact">
+                    <a class="scroll" href="#contact">CONTACT</a>
+                </li>
                 <div class="clearfix"></div>
             </ul>
-        </nav>
+        </div>
     </div>
-</div>
+</nav>
 <div class="content">
     <div class="container">
         <div class="row">
@@ -173,9 +194,13 @@
 </div>
 <div id="about" class="content-about">
     <div class="container">
-            <h2 class="content-title"><span class="bg">About
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="content-title"><span class="bg">About
                 <small>us</small></span>
-            </h2>
+                </h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6 content-about-left-side">
                 <img src="img/screen1.png"/>
@@ -203,9 +228,13 @@
 </div>
 <div id="team" class="content-team">
     <div class="container">
-            <h2 class="content-title"><span class="bg">Our
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="content-title"><span class="bg">Our
                 <small>team</small></span>
-            </h2>
+                </h2>
+            </div>
+        </div>
         <div class="row">
             <div class="owl-controls">
                 <div class="arrows">
@@ -352,7 +381,7 @@
                                         <span></span>
                                     </a>
                                 </div>
-                                <div class="col-sm-6 c">
+                                <div class="col-sm-6 g-icon">
                                     <a href="#">
                                         <span></span>
                                     </a>
@@ -367,45 +396,51 @@
 </div>
 <div id="services" class="content-skills">
     <div class="container center-skills">
-            <h2 class="content-title"><span class="bg">Our
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="content-title"><span class="bg">Our
                 <small>skills</small></span>
-            </h2>
-        <div class="col-md-6">
-            <div class="progress-title">
-                <h3>WEB DESIGN</h3>
-                <p class="percent">90%</p>
-                <div class="clearfix"></div>
-                <div class="progressy1">
-                    <p></p>
-                </div>
-            </div>
-            <div class="progress-title">
-                <h3>HTML/CSS</h3>
-                <p class="percent">75%</p>
-                <div class="clearfix"></div>
-                <div class="progressy2">
-                    <p></p>
-                </div>
+                </h2>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="progress-title">
-                <h3>GRAPHIC DESIGN</h3>
-                <p class="percent">70%</p>
-                <div class="clearfix"></div>
-                <div class="progressy3">
-                    <p></p>
-                </div>
-            </div>
-            <div class="progress-title">
-                <h3>UI/UX</h3>
-                <p class="percent">85%</p>
-                <div class="clearfix"></div>
-                    <div class="progressy4">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
+         <div class="row">
+             <div class="col-md-6 col-sm-6">
+                 <div class="progress-title">
+                     <h3>WEB DESIGN</h3>
+                     <p class="percent">90%</p>
+                     <div class="clearfix"></div>
+                     <div class="progressy1">
+                         <p></p>
+                     </div>
+                 </div>
+                 <div class="progress-title">
+                     <h3>HTML/CSS</h3>
+                     <p class="percent">75%</p>
+                     <div class="clearfix"></div>
+                     <div class="progressy2">
+                         <p></p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-6 col-sm-6">
+                 <div class="progress-title">
+                     <h3>GRAPHIC DESIGN</h3>
+                     <p class="percent">70%</p>
+                     <div class="clearfix"></div>
+                     <div class="progressy3">
+                         <p></p>
+                     </div>
+                 </div>
+                 <div class="progress-title">
+                     <h3>UI/UX</h3>
+                     <p class="percent">85%</p>
+                     <div class="clearfix"></div>
+                     <div class="progressy4">
+                         <p></p>
+                     </div>
+                 </div>
+             </div>
+         </div>
     </div>
     <div class="content-about-bottom">
         <div class="content-services-bottom-text">
@@ -413,22 +448,23 @@
             <p>Our services will lorem and ipsum your aliquam</p>
         </div>
     </div>
+</div>
 <div id="blog" class="content-blog">
     <div class="container">
         <div class="blog-grids">
-            <div class="col-md-3 blog-grid">
+            <div class="col-md-3 col-sm-6 blog-grid">
                 <h2>365</h2>
                 <p>Lorem ipsum</p>
             </div>
-            <div class="col-md-3 blog-grid">
+            <div class="col-md-3 col-sm-6 blog-grid">
                 <h2>98%</h2>
                 <p>Lorem ipsum</p>
             </div>
-            <div class="col-md-3 blog-grid">
+            <div class="col-md-3 col-sm-6 blog-grid">
                 <h2>69</h2>
                 <p>Lorem ipsum</p>
             </div>
-            <div class="col-md-3 blog-grid">
+            <div class="col-md-3 col-sm-6 blog-grid">
                 <h2>1,642</h2>
                 <p>Lorem ipsum</p>
             </div>
@@ -512,11 +548,15 @@
     </div>
 </div>
 <div id="portfolio" class="container">
-    <h2 class="content-title">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="content-title">
         <span class="bg">Our
                 <small>Portfolio</small>
         </span>
-    </h2>
+            </h2>
+        </div>
+    </div>
     <div class="demoTab">
         <ul class="resp-tabs-list">
             <li>
@@ -533,9 +573,9 @@
             </li>
         </ul>
         <div class="resp-tabs-container">
-            <div class="col-md-4 img-top">
+            <div class="col-md-4 col-sm-6 img-top">
                 <a rel="gallery-1" href="img/t1.jpg" class="swipebox">
-                    <img src="img/t1.jpg" alt="image">
+                    <img class="img-responsive" src="img/t1.jpg" alt="image">
                 </a>
 
                 <div class="portfolio-text">
@@ -543,13 +583,10 @@
 
                     <p>apps, icons, ui</p>
                 </div>
-                <div class="link-top">
-                    <span class="link"></span>
-                </div>
             </div>
-            <div class="col-md-4 img-top">
+            <div class="col-md-4 col-sm-6 img-top">
                 <a rel="gallery-1" href="img/t2.jpg" class="swipebox">
-                    <img src="img/t2.jpg" alt="image">
+                    <img class="img-responsive" src="img/t2.jpg" alt="image">
                 </a>
 
                 <div class="portfolio-text">
@@ -557,13 +594,10 @@
 
                     <p>apps, icons, ui</p>
                 </div>
-                <div class="link-top">
-                    <span class="link"></span>
-                </div>
             </div>
-            <div class="col-md-4 img-top">
+            <div class="col-md-4 col-sm-6 img-top">
                 <a rel="gallery-1" href="img/t3.jpg" class="swipebox">
-                    <img src="img/t3.jpg" alt="image">
+                    <img class="img-responsive" src="img/t3.jpg" alt="image">
                 </a>
 
                 <div class="portfolio-text">
@@ -571,13 +605,10 @@
 
                     <p>apps, icons, ui</p>
                 </div>
-                <div class="link-top">
-                    <span class="link"></span>
-                </div>
             </div>
-            <div class="col-md-4 img-top">
+            <div class="col-md-4 col-sm-6 img-top">
                 <a rel="gallery-1" href="img/t4.jpg" class="swipebox">
-                    <img src="img/t4.jpg" alt="image">
+                    <img class="img-responsive" src="img/t4.jpg" alt="image">
                 </a>
 
                 <div class="portfolio-text">
@@ -585,13 +616,10 @@
 
                     <p>apps, icons, ui</p>
                 </div>
-                <div class="link-top">
-                    <span class="link"></span>
-                </div>
             </div>
-            <div class="col-md-4 img-top">
+            <div class="col-md-4 col-sm-6 img-top">
                 <a rel="gallery-1" href="img/t5.jpg" class="swipebox">
-                    <img src="img/t5.jpg" alt="image">
+                    <img class="img-responsive" src="img/t5.jpg" alt="image">
                 </a>
 
                 <div class="portfolio-text">
@@ -599,36 +627,33 @@
 
                     <p>apps, icons, ui</p>
                 </div>
-                <div class="link-top">
-                    <span class="link"></span>
-                </div>
             </div>
-            <div class="col-md-4 img-top">
+            <div class="col-md-4 col-sm-6 img-top">
                 <a rel="gallery-1" href="img/t6.jpg" class="swipebox">
-                    <img src="img/t6.jpg" alt="image">
+                    <img class="img-responsive" src="img/t6.jpg" alt="image">
                 </a>
-
                 <div class="portfolio-text">
                     <h3>Neque Porro Quisquam</h3>
 
                     <p>apps, icons, ui</p>
                 </div>
-                <div class="link-top">
-                    <span class="link"></span>
-                </div>
             </div>
+            <div class="clearfix"></div>
         </div>
     </div>
-</div>
     <div class="all-buttons watch-more">
         <a href="#">Watch more</a>
     </div>
 </div>
 <div id="contact" class="content-contact">
     <div class="container">
-            <h2 class="content-title"><span class="bg">Get
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="content-title"><span class="bg">Get
                 <small>in touch</small></span>
-            </h2>
+                </h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="content-contact-left-grids">
@@ -667,11 +692,15 @@
          </div>
     </div>
 </div>
-<div class="footer-title">
-    <a href="#">
-        <img src="img/ftr.png"/>
-    </a>
-</div>
+<footer class="footer-title">
+    <div class="container">
+        <div class="row">
+            <div>
+                <img src="img/ftr.png" alt=""/>
+            </div>
+        </div>
+    </div>
+</footer>
     <script src="js/script.js"></script>
 </body>
 </html>
